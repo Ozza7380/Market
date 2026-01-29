@@ -1,0 +1,25 @@
+img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    background: #fafafa;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.product {
+    padding: 16px;
+    height: 500px;
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+.card {
+    padding: 16px;
+    border-radius: 12px;
+    border-style: groove;
+}
+.nama {
+    font-size: 22px;
+}
