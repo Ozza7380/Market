@@ -1,3 +1,7 @@
+.gambar {
+    display: flex;
+    justify-content: center;
+}
 img {
     width: 300px;
     height: auto;
@@ -6,20 +10,60 @@ img {
     border-radius: 6px;
     margin-bottom: 10px;
 }
-.product {
+
+body {
+  font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal
+}
+#product {
     padding: 16px;
-    height: 500px;
-    display: flex;
-    justify-content:start;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1rem; 
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px; 
 }
 .card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     padding: 16px;
     border-radius: 12px;
     border-style: groove;
 }
 .nama {
+    text-align: center;
     font-size: 22px;
+    font-weight: 700;
+}
+.harga {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+.link {
+    width: 110px;
+    margin: auto;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    border-style: inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 1s;
+}
+.link:hover {
+    transform: translatey(-5px);
+}
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+@media (max-width: 1024px) {
+    #product {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    #product {
+        grid-template-columns: 1fr;
+    }
 }
