@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ+Basic:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="detail" class="detail"></div>
+    
+    <form id="registration">
+        <div class="format-input">
+            <label>Nama:</label>
+            <input type="text" id="name" placeholder="Tulis nama Anda disini" required class="input">
+        </div>
+        <!--<div class="format-input">
+            <label>Nomor WhatsApp:</label>
+            <input type="text" id="WhatsApp" placeholder="+628xxxxxxxxx" required class="input">
+        </div>-->
+        <div class="format-input">
+            <label>Jumlah:</label>
+            <input type="number" id="jumlah" placeholder="Tulis jumlah pesanan Anda disini (menggunakan angka)" required class="input">
+        </div>
+        <div class="format-input">
+            <label>Alamat:</label>
+            <textarea id="Alamat" rows="2" cols="50" placeholder="Jl XXXX, Desa XXXXX. RT XX, RW XX, Kelurahan XXXXX, Kecamatan XXXXX, Kabupaten XXXXXX." required class="input"></textarea>
+        <button type="submit" class="btn btn-primary">Pesan</button>
+        </div>
+    </form>
+
     <script src="script.js"></script>
+    <script src="wa.js"></script>
 </body>
 </html>

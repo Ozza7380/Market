@@ -23,3 +23,49 @@ img {
 .nama {
     font-size: 22px;
 }
+body {
+  font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal
+}
+.btn {
+    margin: 18px;
+    display: inline-block; 
+    padding: 10px 16px; 
+    border-radius: 999px; 
+    text-decoration: none; 
+    font-weight: 700; 
+    border: 1px solid #e7e7e7; color: #1a5632; 
+    background: #ffffff;
+}
+.btn:hover {
+    background: #77ebb1; 
+    color: #212121;
+}
+.btn-primary {
+    background: #1a5632; 
+    color: #ffffff; 
+    border-color: #1a5632;
+    transition: 2s;
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+    filter: brightness(.95);
+}
+/*order*/
+.format-input {
+    max-width: 768px;
+    margin: auto;
+    margin-top: 16px; 
+    margin-bottom: 16px; 
+    font-size: 16px; 
+    display: grid;
+}
+.input {
+    padding: 4px; 
+}
+.detail {
+    max-width: 768px;
+    margin: auto;
+}
